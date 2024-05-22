@@ -1,0 +1,328 @@
+/*Fondo de la página*/
+body{
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Menu*/
+.header {
+    background: #E6CB55;
+    color: rgb(9, 9, 9);
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 160px;
+    display: flex;
+    z-index: 100;
+    
+ }
+.header .titulo {
+    color: #451d22;
+ }
+ .pethouse{
+   font-size: 50px;
+   font-weight: bold;
+   unicode-bidi: isolate;
+ }
+ 
+.header a {
+    color: #b9a1a4;
+    text-decoration: none;
+ }
+.nav-img{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 32px;
+ }
+ 
+input:checked + nav {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color:#b39a86;
+    transform: translateY(0);
+    position:absolute;
+    margin-top: 145px;
+    font-size: 20px;
+    height: auto;
+   }
+   .botonhamburquesa{
+      font-size: 30px;
+      margin: 20px;
+    
+    
+ }
+  
+ .deisy {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    }
+  .deisy1 {
+     position: absolute;
+     top: 15px;
+     right: 30px;
+     width: 40px;
+     height: 20px;
+     display: none;
+     z-index: 2;
+    }
+  nav {
+   position: absolute;
+   transform: translateY(-100%);
+   transition: all 1000ms ease-in-out;
+   display:none ;
+   left: 0;
+   height: 45px;
+   
+ }
+ .container-nav {
+   display: flex;
+   justify-content: right;
+  
+}
+ .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+ }
+ .navigation ul li {
+    display: inline-block;
+    letter-spacing: 0, 40px;
+    margin: 3px;
+ }
+ 
+ .navigation ul li a {
+    display: block;
+    padding-left: 0, 2rem, 1rem;
+    transition: all 0.4s linear;
+    color: #451d22  ;
+ }
+ .navigation ul li a:hover {
+    background:#dbd9d2; 
+    }
+
+
+.logo{
+    padding-left: 43%;
+    padding-top: -50px;
+    }
+
+main{
+    margin-top: 200px;
+}
+
+h1{
+    text-align: center;
+}
+.star{
+    
+    margin: 4px solid #c50e0e; 
+    display:flex;
+    justify-content:center ;
+    margin-top: 200px;
+    background-image: url('./oe.png'); width: 100% ;height: 80%;
+    background-repeat: no-repeat;background-size: cover;
+}
+.colortext{
+    color:rgb(161, 87, 1);    
+}
+.stilo{
+    text-align: justify;
+    margin: 50px ;
+}
+
+/*Informacion de contacto*/
+/* aside{
+    background-color: purple;
+    width: 29%;
+    height: 450px;
+    margin-left: 6px;
+    margin-top: 15%;
+    }
+.contacto{
+    background-color: #E19249;
+    height: 100%;
+    width: 100%;
+    }
+div{
+    text-align: justify;
+    font-family:  "Fira Sans" sans-serif;
+    padding-top: 10px;
+    }
+
+h4{
+    text-align: center;
+    padding-bottom: 20px;
+} */
+
+/*Correo Electronico y Formulario*/
+
+h5, form{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+/*Pie de pagina*/
+:root {
+    font-family: "Fira Sans" sans-serif;
+}
+
+footer{
+    background-color: #E6CB55;
+    color: #451d22;
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+}
+footer h4{
+    margin-bottom: 30px;
+}
+.footer-links a{
+    color: #451d22;
+    text-decoration: none;
+    padding-bottom: 200px;
+}
+.containerfooter{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin:0 auto;
+}
+.containerfooter div{
+    height: 300px;
+    
+}
+.logofooter{
+    display: flex;
+    align-items:center;
+
+}
+.logofooter img{
+width: 190px;
+height: 190px;
+
+}
+.redessociales{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.redessociales a{
+color: #451d22;
+font-size: 15px;
+transition:color 0.3s ease;
+text-decoration: none;
+}
+.redessociales a img{
+    width: 40px;
+    height: 40px;
+}
+.redessociales a:hover, .footer-links a:hover{
+    color: #b9a1a4;
+}
+.copyright{
+    text-align: center;
+}   
+@media (max-width:767px) and (min-width:260px) {
+.containerfooter {
+        flex-direction: column;
+        gap:40px;
+    }
+.containerfooter h4{
+        font-size: 15px;
+    }
+.footer-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-wrap: pretty;
+        align-items: center;
+    }
+.footer-links h4{
+        width:60%;
+        text-align: center;
+    }
+.logofooter img{
+        width: 100px;
+        height: 100px;
+    }
+.containerfooter div{
+        height: auto;
+    }
+    }
+
+
+
+/*TituloPethouse
+h1 {margin-top: -10px;
+    background-color: #c09b7d;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+    }*/
+
+    
+    
+    
+    /* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos para el botón de enviar */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de enviar al pasar el cursor por encima */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
